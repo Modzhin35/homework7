@@ -28,8 +28,8 @@ void PrintRandomArray(double[,] randArray)
         Console.WriteLine();
     }
 }
-int row = Input("Введите количество строк: ");
-int col = Input("Введите количество столбцов: ");
+int row = Math.Abs(Input("Введите количество строк: "));
+int col = Math.Abs(Input("Введите количество столбцов: "));
 int minEl = Input("Введите минимальное значение для генерации случайных чисел: ");
 int maxEl = Input("Введите максимальное значение для генерации случайных чисел: ");
 PrintRandomArray(GetRandomArray(row, col, minEl, maxEl));
