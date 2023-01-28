@@ -4,7 +4,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-int Intput(string message)
+int Input(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
@@ -28,8 +28,8 @@ void PrintRandomArray(double[,] randArray)
         Console.WriteLine();
     }
 }
-int row = Intput("Введите количество строк: ");
-int col = Intput("Введите количество столбцов: ");
-int minEl = Intput("Введите минимальное значение для генерации случайных чисел: ");
-int maxEl = Intput("Введите максимальное значение для генерации случайных чисел: ");
+int row = Input("Введите количество строк: ");
+int col = Input("Введите количество столбцов: ");
+int minEl = Input("Введите минимальное значение для генерации случайных чисел: ");
+int maxEl = Input("Введите максимальное значение для генерации случайных чисел: ");
 PrintRandomArray(GetRandomArray(row, col, minEl, maxEl));
